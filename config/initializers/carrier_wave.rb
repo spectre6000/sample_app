@@ -4,7 +4,7 @@ if Rails.env.production?
       # Configuration for Amazon S3
       :provider              => 'AWS',
       :aws_access_key_id     => ENV['AKIAITCC4QPHR54WSTAA'],
-      :aws_secret_access_key => ENV['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']
+      :aws_secret_access_key => ENV['O8Mft]X8Fpz}']
     }
     config.fog_directory     =  ENV['hartlsampleapp']
   end
