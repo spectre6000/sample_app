@@ -21,8 +21,8 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_difference 'Micropost.count', 1 do 
       post microposts_path, micropost: { content: content, picture: 'rails.png' }
     end
-    # fido = assigns(:micropost)
-    # assert fido.picture?
+    # photo = assigns(:micropost)
+    # assert photo.picture?
     assert_redirected_to root_url
     follow_redirect!
     assert_match content, response.body
